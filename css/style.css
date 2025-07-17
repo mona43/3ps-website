@@ -11,6 +11,9 @@ body {
     padding: 0;
     color: white;
 }
+.border-primary {
+    border-color: 2px solid var(--primary-color) !important;
+}
 /* header */
 header {
     background-image: url('/images/bg-img.png');
@@ -42,6 +45,7 @@ header {
 .custom-navbar .nav-link:hover::after {
     width: 100%;
 }
+
 /* custom-heading */
 .custom-heading {
     font-size: clamp(30px, 4vw, 55px);
@@ -73,8 +77,81 @@ header {
 /* hover of about link */
 .about-section {
     display: none;
+    background-color: white;
+    color: var(--primary-color);
+    padding: 40px 0;
+    top: calc(100% - 10px);
     transition: all 0.3s ease;
 }
-#about:hover .about-section{
-    display: block;
+
+/* تنسيق محتوى الـ about section */
+.about-section h3, .about-section h4 {
+    color: var(--primary-color);
+}
+
+.about-section p, .about-section li {
+    color: #666;
+    line-height: 1.6;
+}
+
+.about-section ul li {
+    margin-bottom: 8px;
+}
+
+
+
+.custom-navbar.white-bg {
+    background-color: white !important;
+    transition: background-color 0.3s ease;
+}
+
+.custom-navbar.white-bg .nav-link {
+    color: var(--primary-color) !important;
+}
+
+.custom-navbar.white-bg .nav-link:hover {
+    color: var(--secondary-color) !important;
+}
+
+
+/* ease*/
+.custom-navbar {
+    transition: all 0.3s ease;
+}
+
+.custom-navbar .nav-link {
+    transition: color 0.3s ease;
+}
+
+/*About Us */
+.logo {
+    transition: all 0.3s ease;
+}
+
+.custom-navbar.white-bg .logo {
+    content: url('/images/logo-blue.svg');
+}
+
+/* Search & Lang */
+.search-icon, .lang-text {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* Search & Lang */
+.search:hover .search-icon {
+    transform: scale(1.1);
+}
+
+.search:hover .lang-text {
+    transform: scale(1.05);
+}
+
+/* change color of Search & Lang About Us */
+.custom-navbar.white-bg .search-icon {
+    filter: brightness(0) saturate(100%) invert(13%) sepia(94%) saturate(1352%) hue-rotate(194deg) brightness(95%) contrast(80%);
+}
+
+.custom-navbar.white-bg .lang-text {
+    color: var(--primary-color) !important;
 }

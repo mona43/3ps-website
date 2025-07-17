@@ -36,14 +36,9 @@
                 <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
                 <ul class="navbar-nav gap-4 mx-auto">
                     <!-- start-section-about -->
-                    <section id="about">
                     <li class="nav-item" id="about-nav-item">
-                        <a class="nav-link text-white fw-bold fs-4" href="#about">About Us</a>
+                        <a class="nav-link text-white fw-bold fs-4" href="#about" id="about-link">About Us</a>
                     </li>
-                    <div class="about-section position-absolute w-100 start-0">
-                        <h2>hwllow madam</h2>
-                    </div>
-                    </section>
                     <!-- end-section-about -->
                     <li class="nav-item"><a class="nav-link text-white fw-bold fs-4" href="#">Services</a></li>
                     <li class="nav-item"><a class="nav-link text-white fw-bold fs-4" href="#">Markets</a></li>
@@ -52,14 +47,32 @@
                     <li class="nav-item"><a class="nav-link text-white fw-bold fs-4" href="#">Contact Us</a></li>
                     <!-- Search & Lang -->
                     <li class="search nav-item d-flex align-items-center gap-3 ms-5">
-                    <img src="/images/search.svg" alt="Search" width="27" class="" />
-                    <span class="text-white fw-medium fs-2">AR</span>
+                    <img src="/images/search.svg" alt="Search" width="27" class="search-icon" />
+                    <span class="text-white fw-medium fs-2 lang-text">AR</span>
                     </li>
                 </ul>
                 </div>
 
             </div>
+
+            <!-- About Us Dropdown Section -->
+            <div class="about-section position-absolute w-100 z-3 left-0" id="about-dropdown">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 border-primary border-end">
+                            <h3 class="fw-bold mb-3">ABOUT US</h3>
+                            <p>See the industries we work in</p>
+                        </div>
+                        <div class="col-md-4">
+                        </div>
+                        <div class="col-md-4">
+                        </div>
+                    </div>
+                </div>
+            </div>
             </nav>
+
+
 
             <!-- description -->
             <div class="text d-flex flex-column position-absolute z-0">
@@ -72,5 +85,8 @@
 
         <!-- Bootstrap JS (includes Popper) -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Custom JavaScript -->
+        <script src="js/script.js"></script>
     </body>
 </html>
