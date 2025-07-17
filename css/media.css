@@ -9,9 +9,18 @@
     .search {
         margin: 0 !important;
     }
+    .logo {
+        width: 100px !important;
+    }
+    .navbar .container {
+        padding-block: 10px !important;
+    }
+    .octagon-btn {
+        width: 100% !important;
+    }
     .text {
-    bottom: 50%;
-    left: 10%;
-    max-width: 800px;
-}
+        bottom: 10%;
+        left: 5%;
+        max-width: 90%;
+        text-align: center;
     }

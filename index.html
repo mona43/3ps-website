@@ -18,12 +18,12 @@
     <body>
         <!-- header with navbar -->
         <header class="position-relative">
-            <nav class="navbar navbar-expand-lg bg-transparent custom-navbar position-absolute w-100 z-5">
+            <nav class="navbar navbar-expand-lg bg-transparent custom-navbar position-absolute w-100 z-2">
             <div class="container d-flex justify-content-between align-items-center py-5 gap-2">
 
                 <!-- Logo -->
                 <a class="navbar-brand" href="#">
-                <img src="/images/logo.svg" alt="Logo" width="144" class="d-inline-block align-text-top" />
+                <img src="/images/logo.svg" alt="Logo" width="144" class="d-inline-block align-text-top logo" />
                 </a>
 
                 <!-- Toggle Button for Mobile -->
@@ -62,7 +62,7 @@
             </nav>
 
             <!-- description -->
-            <div class="text d-flex flex-column position-absolute">
+            <div class="text d-flex flex-column position-absolute z-0">
                 <h2 class="fw-bold custom-heading">Exploring Earth to Build a Safer future </h2>
                 <p class="fw-semibold custom-font-size">We use the power of Geo-data to unlock the secrets of Earth _ from surface to subsurface, natural to built environment.</p>
                 <button class="octagon-btn fw-bold fs-3 py-2 w-50">Explore Our Services</button>
@@ -72,16 +72,5 @@
 
         <!-- Bootstrap JS (includes Popper) -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-        <script>
-        // Change navbar background to white on hover over 'About Us'
-        const aboutNavItem = document.getElementById('about-nav-item');
-        const navbar = document.querySelector('.custom-navbar');
-        aboutNavItem.addEventListener('mouseenter', function() {
-            navbar.classList.add('navbar-white-bg');
-        });
-        aboutNavItem.addEventListener('mouseleave', function() {
-            navbar.classList.remove('navbar-white-bg');
-        });
-        </script>
     </body>
 </html>
