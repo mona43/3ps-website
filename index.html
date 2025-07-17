@@ -12,11 +12,13 @@
         />
         <!-- Custom CSS -->
         <link rel="stylesheet" href="/css/style.css" />
+        <!-- media css -->
+        <link rel="stylesheet" href="/css/media.css">
     </head>
     <body>
         <!-- header with navbar -->
-        <header>
-            <nav class="navbar navbar-expand-lg bg-transparent custom-navbar">
+        <header class="position-relative">
+            <nav class="navbar navbar-expand-lg bg-transparent custom-navbar position-absolute w-100 z-5">
             <div class="container d-flex justify-content-between align-items-center py-5 gap-2">
 
                 <!-- Logo -->
@@ -32,15 +34,25 @@
 
                 <!-- Navbar Content (Links + Search) -->
                 <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-                <ul class="navbar-nav gap-5 mx-auto">
+                <ul class="navbar-nav gap-4 mx-auto">
+                    <!-- start-section-about -->
+                    <section id="about">
+                    <li class="nav-item" id="about-nav-item">
+                        <a class="nav-link text-white fw-bold fs-4" href="#about">About Us</a>
+                    </li>
+                    <div class="about-section position-absolute w-100 start-0">
+                        <h2>hwllow madam</h2>
+                    </div>
+                    </section>
+                    <!-- end-section-about -->
                     <li class="nav-item"><a class="nav-link text-white fw-bold fs-4" href="#">Services</a></li>
                     <li class="nav-item"><a class="nav-link text-white fw-bold fs-4" href="#">Markets</a></li>
                     <li class="nav-item"><a class="nav-link text-white fw-bold fs-4" href="#">Blogs</a></li>
                     <li class="nav-item"><a class="nav-link text-white fw-bold fs-4" href="#">Career</a></li>
                     <li class="nav-item"><a class="nav-link text-white fw-bold fs-4" href="#">Contact Us</a></li>
                     <!-- Search & Lang -->
-                    <li class="nav-item d-flex align-items-center gap-3">
-                    <img src="/images/search.svg" alt="Search" width="27" />
+                    <li class="search nav-item d-flex align-items-center gap-3 ms-5">
+                    <img src="/images/search.svg" alt="Search" width="27" class="" />
                     <span class="text-white fw-medium fs-2">AR</span>
                     </li>
                 </ul>
@@ -49,12 +61,27 @@
             </div>
             </nav>
 
+            <!-- description -->
+            <div class="text d-flex flex-column position-absolute">
+                <h2 class="fw-bold custom-heading">Exploring Earth to Build a Safer future </h2>
+                <p class="fw-semibold custom-font-size">We use the power of Geo-data to unlock the secrets of Earth _ from surface to subsurface, natural to built environment.</p>
+                <button class="octagon-btn fw-bold fs-3 py-2 w-50">Explore Our Services</button>
+            </div>
         </header>
 
 
         <!-- Bootstrap JS (includes Popper) -->
-        <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        ></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+        // Change navbar background to white on hover over 'About Us'
+        const aboutNavItem = document.getElementById('about-nav-item');
+        const navbar = document.querySelector('.custom-navbar');
+        aboutNavItem.addEventListener('mouseenter', function() {
+            navbar.classList.add('navbar-white-bg');
+        });
+        aboutNavItem.addEventListener('mouseleave', function() {
+            navbar.classList.remove('navbar-white-bg');
+        });
+        </script>
     </body>
 </html>

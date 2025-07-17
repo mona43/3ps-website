@@ -1,0 +1,17 @@
+@media (max-width: 991.98px) {
+    .custom-navbar {
+        background-color:var(--primary-color) !important;
+    }
+
+    .custom-navbar .nav-link {
+        color: var(--secondary-color) !important;
+    }
+    .search {
+        margin: 0 !important;
+    }
+    .text {
+    bottom: 50%;
+    left: 10%;
+    max-width: 800px;
+}
+    }

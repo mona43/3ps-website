@@ -9,6 +9,7 @@ body {
     font-family: 'IBM Plex Sans', 'Almarai', sans-serif;
     margin: 0;
     padding: 0;
+    color: white;
 }
 /* header */
 header {
@@ -41,12 +42,39 @@ header {
 .custom-navbar .nav-link:hover::after {
     width: 100%;
 }
-@media (max-width: 991.98px) {
-    .custom-navbar {
-        background-color:var(--primary-color) !important;
-    }
+/* custom-heading */
+.custom-heading {
+    font-size: clamp(30px, 4vw, 55px);
+    line-height: clamp(30px, 5vw, 73px);
+    line-height: 73px;
+}
+.custom-font-size {
+    font-size: clamp(24px, 2.5vw, 34px);
+    line-height: clamp(36px, 3vw, 48px);
+}
+.octagon-btn {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    clip-path: polygon(5% 0, 95% 0, 100% 25%, 100% 75%, 95% 98%, 5% 100%, 0 75%, 0 25%);
+    transition: background-color 0.3s ease;
+}
 
-    .custom-navbar .nav-link {
-        color: var(--secondary-color) !important;
-    }
-    }
+.octagon-btn:hover {
+    background-color: white;
+    color: var(--primary-color);
+}
+.text {
+    bottom: 10%;
+    left: 10%;
+    max-width: 800px;
+}
+/* hover of about link */
+.about-section {
+    display: none;
+    transition: all 0.3s ease;
+}
+#about:hover .about-section{
+    display: block;
+}
