@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Michroma&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-color :#083C61;
+    --secondary-color: #F15A3C;
+}
+
+body {
+    font-family: 'IBM Plex Sans', 'Almarai', sans-serif;
+}
+header {
+    background-image: url('/images/bg-img.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
