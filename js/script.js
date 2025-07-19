@@ -2,7 +2,16 @@ document.addEventListener('DOMContentLoaded', function() {
     const aboutNavItem = document.getElementById('about-nav-item');
     const aboutDropdown = document.getElementById('about-dropdown');
     const navbar = document.querySelector('.custom-navbar');
+    const searchModal = document.getElementById('searchModal');
     let hoverTimeout;
+
+    // Close search modal when clicking outside
+    document.addEventListener('mousedown', function(event) {
+        if (searchModal.classList.contains('show') && !searchModal.querySelector('.modal-content').contains(event.target)) {
+            const modal = bootstrap.Modal.getInstance(searchModal);
+            modal.hide();
+        }
+    });
 
     function showAboutSection() {
         clearTimeout(hoverTimeout);

@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Michroma&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+    font-family: 'latin964';
+    src: url('/946-LATIN-REGULAR-4\ \(1\).TTF');
+    font-weight: normal;
+    font-style: normal;
+}
 
 :root {
     --primary-color :#083C61;
@@ -7,7 +12,7 @@
 }
 
 body {
-    font-family: 'IBM Plex Sans', 'Almarai', sans-serif;
+    font-family: 'latin964', sans-serif;
     margin: 0;
     padding: 0;
     color: white;
@@ -159,4 +164,11 @@ header {
 .img .text {
     position: absolute;
     z-index: 2;
+}
+.modal-backdrop {
+    display: none !important;
+}
+.modall {
+    max-width: 873px;
+    background-color: #F5F5F5;
 }

@@ -37,46 +37,72 @@
                 <ul class="navbar-nav gap-4 mx-auto">
                     <!-- start-section-about -->
                     <li class="nav-item" id="about-nav-item">
-                        <a class="nav-link text-white fw-bold fs-4" href="#about" id="about-link">About Us</a>
+                        <a class="nav-link text-white fs-4" href="#about" id="about-link">About Us</a>
                     </li>
                     <!-- end-section-about -->
-                    <li class="nav-item"><a class="nav-link text-white fw-bold fs-4" href="#">Services</a></li>
-                    <li class="nav-item"><a class="nav-link text-white fw-bold fs-4" href="#">Markets</a></li>
-                    <li class="nav-item"><a class="nav-link text-white fw-bold fs-4" href="#">Blogs</a></li>
-                    <li class="nav-item"><a class="nav-link text-white fw-bold fs-4" href="#">Career</a></li>
-                    <li class="nav-item"><a class="nav-link text-white fw-bold fs-4" href="#">Contact Us</a></li>
-                    <!-- Search & Lang -->
+                    <li class="nav-item"><a class="nav-link text-white fs-4" href="#">Services</a></li>
+                    <li class="nav-item"><a class="nav-link text-white fs-4" href="#">Markets</a></li>
+                    <li class="nav-item"><a class="nav-link text-white fs-4" href="#">Blogs</a></li>
+                    <li class="nav-item"><a class="nav-link text-white fs-4" href="#">Career</a></li>
+                    <li class="nav-item"><a class="nav-link text-white fs-4" href="#">Contact Us</a></li>
+                    <!-- start Search & Lang Dropdown Section -->
                     <li class="search nav-item d-flex align-items-center gap-3 ms-5">
-                    <img src="/images/search.svg" alt="Search" width="27" class="search-icon" />
-                    <span class="text-white fw-medium fs-2 lang-text">AR</span>
+                        <div class="search-bar">
+                            <button class="border-0 bg-transparent" type="button" data-bs-toggle="modal"  data-bs-target="#searchModal">
+                                <img src="/images/search.svg" alt="Search" width="27" class="search-icon" />
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade bg-white h-25" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-fullscreen">
+                                    <div class="modal-content">
+                                        <div class="container py-5">
+                                            <div class="d-flex align-items-center gap-4">
+                                                <img src="/images/logo-blue.svg" alt="Logo" width="144" class="logo me-4" />
+                                                <div class="search-input-wrapper position-relative flex-grow-1 modall py-3 px-2">
+                                                    <img src="/images/Search2.svg" alt="" class="position-absolute top-50 start-0 translate-middle-y ms-3">
+                                                    <input type="text" class="bg-transparent border-0  ps-5 pe-5 fs-4" placeholder="">
+                                                    <button type="button" class="btn-close position-absolute top-50 end-0 translate-middle-y me-2" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <span class="text-white fs-2 lang-text">AR</span>
                     </li>
+                    <!-- end Search & Lang Dropdown Section -->
                 </ul>
                 </div>
 
             </div>
+            
+            
+
 
             <!-- About Us Dropdown Section -->
             <div class="about-section position-absolute w-100 z-3 left-0 pb-5 bg-white" id="about-dropdown">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4 border-primary border-end">
-                            <h3 class="fw-bold mb-3">ABOUT US</h3>
-                            <p>See the industries we work in</p>
+                            <h3 class="mb-3">ABOUT US</h3>
+                            <span>See the industries we work in</span>
                         </div>
                         <div class="col-md-4">
                             <ul class="list-unstyled py-5">
-                                <li class="mx-5 fw-bold fs-4 mb-2"><a href="#" class="text-decoration-none">Our Values</a></li>
-                                <li class="mx-5 fw-bold fs-4 mb-2 "><a href="#" class="text-decoration-none">Certificates</a></li>
-                                <li class="mx-5 fw-bold fs-4 mb-2"><a href="#" class="text-decoration-none">Location</a></li>
-                                <li class="mx-5 fw-bold fs-4 mb-2"><a href="#" class="text-decoration-none">Ceo Messeges</a></li>
+                                <li class="mx-5 fs-4 mb-2"><a href="#" class="text-decoration-none">Our Values</a></li>
+                                <li class="mx-5 fs-4 mb-2 "><a href="#" class="text-decoration-none">Certificates</a></li>
+                                <li class="mx-5 fs-4 mb-2"><a href="#" class="text-decoration-none">Location</a></li>
+                                <li class="mx-5 fs-4 mb-2"><a href="#" class="text-decoration-none">Ceo Messeges</a></li>
                             </ul>
                         </div>
                         <div class="col-md-4">
                             <div class="img position-relative hiding">
                                 <img src="/images/energy.png" alt="" class="w-100">
                                 <div class="text position-absolute d-flex flex-column justify-content-center w-100 start-0">
-                                    <h5 class="fw-bold fs-6 mb-3 text-white w-75 ps-4 pt-4">Supporting the energy transition for a safe and sustainable world</h5>
-                                    <button class="octagon-btn fw-bold fs-6 py-2 w-50 text-white border-0 pointer-event m-auto">Read More</button>
+                                    <h5 class="fs-6 mb-3 text-white w-75 ps-4">Supporting the energy transition for a safe and sustainable world</h5>
+                                    <button class="octagon-btn fs-6 py-2 w-50 text-white border-0 pointer-event m-auto">Read More</button>
                                 </div>
                             </div>
                         </div>
@@ -89,9 +115,9 @@
 
             <!-- description -->
             <div class="text d-flex flex-column position-absolute z-0">
-                <h2 class="fw-bold custom-heading">Exploring Earth to Build a Safer future </h2>
-                <p class="fw-semibold custom-font-size">We use the power of Geo-data to unlock the secrets of Earth _ from surface to subsurface, natural to built environment.</p>
-                <button class="octagon-btn fw-bold fs-3 py-2 w-50 text-white border-0 pointer-event">Explore Our Services</button>
+                <h2 class="custom-heading">Exploring Earth to Build a Safer future </h2>
+                <span class="custom-font-size mb-5">We use the power of Geo-data to unlock the secrets of Earth _ from surface to subsurface, natural to built environment.</span>
+                <button class="octagon-btn fs-3 py-2 w-50 text-white border-0 pointer-event">Explore Our Services</button>
             </div>
         </header>
 
